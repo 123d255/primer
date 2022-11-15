@@ -10,6 +10,8 @@ try:
             messagebox.showwarning(title="Ошибка", message="Введена не цифра,вторым сообщением будет прошлый ответ")
         except ZeroDivisionError:
             messagebox.showwarning(title="Ошибка", message="На ноль делить нельзя,вторым сообщением будет прошлый ответ")
+        else:
+            print("Ошибки не замечены")
         finally:
             messagebox.showinfo(title="Ответ", message=f"Ваш ответ:{otv}")
     otv = 0
